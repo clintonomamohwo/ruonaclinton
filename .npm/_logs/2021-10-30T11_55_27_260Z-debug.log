@@ -1,0 +1,56 @@
+0 verbose cli [
+0 verbose cli   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/node',
+0 verbose cli   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/npm',
+0 verbose cli   'install',
+0 verbose cli   '-g',
+0 verbose cli   'npm@8.1.'
+0 verbose cli ]
+1 info using npm@7.7.6
+2 info using node@v15.14.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 0ms
+5 timing config:load:file:/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/Users/ruonaclinton/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/Users/ruonaclinton/.nvm/versions/node/v15.14.0/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:setEnvs Completed in 0ms
+16 timing config:load Completed in 3ms
+17 timing npm:load:configload Completed in 3ms
+18 timing npm:load:setTitle Completed in 4ms
+19 timing npm:load:setupLog Completed in 0ms
+20 timing npm:load:cleanupLog Completed in 1ms
+21 timing npm:load:configScope Completed in 0ms
+22 timing npm:load:projectScope Completed in 0ms
+23 timing npm:load Completed in 9ms
+24 timing config:load:flatten Completed in 1ms
+25 timing arborist:ctor Completed in 0ms
+26 timing idealTree:init Completed in 2ms
+27 http fetch GET 200 https://registry.npmjs.org/npm 8ms (from cache)
+28 timing idealTree Completed in 23ms
+29 timing command:install Completed in 24ms
+30 verbose type tag
+31 verbose stack npm: No matching version found for npm@8.1..
+31 verbose stack     at module.exports (/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/npm-pick-manifest/index.js:209:23)
+31 verbose stack     at /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/registry.js:117:26
+31 verbose stack     at async Arborist.[retrieveSpecName] (/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:465:18)
+31 verbose stack     at async Promise.all (index 0)
+31 verbose stack     at async Arborist.[applyUserRequests] (/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:419:7)
+31 verbose stack     at async Arborist.buildIdealTree (/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:207:7)
+31 verbose stack     at async Arborist.reify (/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:131:5)
+31 verbose stack     at async Install.install (/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/lib/install.js:137:5)
+32 verbose cwd /Users/ruonaclinton
+33 verbose Darwin 20.6.0
+34 verbose argv "/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/node" "/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/npm" "install" "-g" "npm@8.1."
+35 verbose node v15.14.0
+36 verbose npm  v7.7.6
+37 error code ETARGET
+38 error notarget No matching version found for npm@8.1..
+39 error notarget In most cases you or one of your dependencies are requesting
+39 error notarget a package version that doesn't exist.
+40 verbose exit 1

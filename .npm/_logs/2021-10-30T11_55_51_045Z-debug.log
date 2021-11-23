@@ -1,0 +1,104 @@
+0 verbose cli [
+0 verbose cli   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/node',
+0 verbose cli   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/npm',
+0 verbose cli   'install',
+0 verbose cli   '-g',
+0 verbose cli   'npm@8.1.2'
+0 verbose cli ]
+1 info using npm@7.7.6
+2 info using node@v15.14.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/Users/ruonaclinton/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/Users/ruonaclinton/.nvm/versions/node/v15.14.0/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 4ms
+17 timing npm:load:configload Completed in 4ms
+18 timing npm:load:setTitle Completed in 3ms
+19 timing npm:load:setupLog Completed in 1ms
+20 timing npm:load:cleanupLog Completed in 0ms
+21 timing npm:load:configScope Completed in 0ms
+22 timing npm:load:projectScope Completed in 0ms
+23 timing npm:load Completed in 9ms
+24 timing config:load:flatten Completed in 0ms
+25 timing arborist:ctor Completed in 0ms
+26 timing idealTree:init Completed in 3ms
+27 timing idealTree:userRequests Completed in 2ms
+28 silly idealTree buildDeps
+29 silly fetch manifest npm@8.1.2
+30 http fetch GET 200 https://registry.npmjs.org/npm 8ms (from cache)
+31 silly placeDep ROOT npm@8.1.2 OK for:  want: 8.1.2
+32 timing idealTree:#root Completed in 20ms
+33 timing idealTree:node_modules/npm Completed in 0ms
+34 timing idealTree:buildDeps Completed in 20ms
+35 timing idealTree:fixDepFlags Completed in 1ms
+36 warn EBADENGINE Unsupported engine {
+36 warn EBADENGINE   package: 'npm@8.1.2',
+36 warn EBADENGINE   required: { node: '^12.13.0 || ^14.15.0 || >=16' },
+36 warn EBADENGINE   current: { node: 'v15.14.0', npm: '7.7.6' }
+36 warn EBADENGINE }
+37 timing idealTree Completed in 27ms
+38 timing reify:loadTrees Completed in 92ms
+39 timing reify:diffTrees Completed in 2ms
+40 silly reify mark retired [
+40 silly reify   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm',
+40 silly reify   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/npm',
+40 silly reify   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/npx'
+40 silly reify ]
+41 silly reify moves {
+41 silly reify   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm': '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/.npm-cTZo0qgx',
+41 silly reify   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/npm': '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/.npm-CSlVDhOJ',
+41 silly reify   '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/npx': '/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/.npx-clMt4ENU'
+41 silly reify }
+42 timing reify:retireShallow Completed in 1ms
+43 timing reify:createSparse Completed in 0ms
+44 silly tarball no local data for npm@https://registry.npmjs.org/npm/-/npm-8.1.2.tgz. Extracting by manifest.
+45 timing reify:rollback:createSparse Completed in 1ms
+46 timing reify:rollback:retireShallow Completed in 0ms
+47 timing command:install Completed in 101ms
+48 verbose stack Error: Cannot find module 'agentkeepalive'
+48 verbose stack Require stack:
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/make-fetch-happen/agent.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/make-fetch-happen/index.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/npm-registry-fetch/index.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/remote.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/git.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/fetcher.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/index.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/lib/utils/update-notifier.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/lib/cli.js
+48 verbose stack - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/bin/npm-cli.js
+48 verbose stack     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:924:15)
+48 verbose stack     at Function.Module._load (node:internal/modules/cjs/loader:769:27)
+48 verbose stack     at Module.require (node:internal/modules/cjs/loader:996:19)
+48 verbose stack     at require (node:internal/modules/cjs/helpers:92:18)
+48 verbose stack     at getAgent (/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/make-fetch-happen/agent.js:70:17)
+48 verbose stack     at remoteFetch (/Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/make-fetch-happen/index.js:267:17)
+48 verbose stack     at /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/make-fetch-happen/index.js:139:14
+49 verbose cwd /Users/ruonaclinton
+50 verbose Darwin 20.6.0
+51 verbose argv "/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/node" "/Users/ruonaclinton/.nvm/versions/node/v15.14.0/bin/npm" "install" "-g" "npm@8.1.2"
+52 verbose node v15.14.0
+53 verbose npm  v7.7.6
+54 error code MODULE_NOT_FOUND
+55 error Cannot find module 'agentkeepalive'
+55 error Require stack:
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/make-fetch-happen/agent.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/make-fetch-happen/index.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/npm-registry-fetch/index.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/remote.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/git.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/fetcher.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/node_modules/pacote/lib/index.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/lib/utils/update-notifier.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/lib/cli.js
+55 error - /Users/ruonaclinton/.nvm/versions/node/v15.14.0/lib/node_modules/npm/bin/npm-cli.js
+56 verbose exit 1
